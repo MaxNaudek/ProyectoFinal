@@ -4,3 +4,18 @@
   text-align: center;
   font-size: 30px;
 }
+
+.formatoCat {
+  max-width: 60vh;
+  max-height: 60vh;
+}
+.botonCat {
+  margin: 40px;
+}
+.formatoNasa {
+  max-width: 60vh;
+  max-height: 60vh;
+}
+.botonNasa {
+  margin: 40px;
+}
