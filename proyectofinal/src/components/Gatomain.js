@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-let url = "https://api.thecatapi.com/v1/images/search";
+let url =
+  "https://api.thecatapi.com/v1/images/search?api_key=a7881c6a-7106-436c-9b6e-162e8eabdceb";
 let key = "a7881c6a-7106-436c-9b6e-162e8eabdceb";
 const Cat = () => {
-  useEffect(() => {
-    console.log("ALM");
-    datosMascotas();
-  }, []);
-
   const [mascota, setMascota] = useState([]);
 
   const datosMascotas = async () => {
@@ -15,24 +11,28 @@ const Cat = () => {
 
     let gatosjson = await gatos.json();
     console.log(gatosjson);
-    const mascota = gatosjson;
-    setMascota(mascota);
+    setMascota(gatosjson);
   };
+  useEffect(() => {
+    console.log("ALM");
+    datosMascotas();
+  }, []);
   return (
     <>
       <h1>API DE GATOS</h1>
-      <ul>
-        <button className="botonCat" onClick={datosMascotas}>
-          GatoBotón{" "}
-        </button>
-        <li key={mascota.id}>
-          <img className="formatoCat" src={mascota[0].url}></img>
-        </li>
+      <ul key={mascota}>
+        <div>
+          <button className="botonCat" onClick={datosMascotas}>
+            Cambiar Gato!{" "}
+          </button>
+        </div>
+        <img className="formatoCat" src={mascota[0] && mascota[0].url}></img>
       </ul>
     </>
   );
 };
 export default Cat;
+//
 // <ul>{
 //   users.map((e)=> (
 //     <li key={e.id} </li>)  )

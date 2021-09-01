@@ -3,8 +3,12 @@
   font-family: sans-serif;
   text-align: center;
   font-size: 30px;
+  margin-top: 30px;
 }
-
+.Contenedorbotones {
+  display: flex;
+  align-content: center;
+}
 .formatoCat {
   max-width: 60vh;
   max-height: 60vh;
@@ -12,10 +16,44 @@
 .botonCat {
   margin: 40px;
 }
-.formatoNasa {
-  max-width: 60vh;
-  max-height: 60vh;
-}
+
 .botonNasa {
-  margin: 40px;
+  margin: 10px;
+}
+.botonPrueba {
+  max-width: 15vh;
+}
+.Gatoboton {
+  max-width: 30vh;
+  max-height: 30vh;
+  border-radius: 30px;
+  margin: 30px;
+}
+.Museoboton {
+  max-width: 30vh;
+  max-height: 30vh;
+  border-radius: 30px;
+  margin: 30px;
+}
+
+.Nasaboton {
+  max-width: 30vh;
+  max-height: 30vh;
+  border-radius: 30px;
+  margin: 30px;
+  box-shadow: 20px;
+}
+.formatoNasa {
+  max-width: 50vh;
+  max-height: 50vh;
+}
+.explicacionNasa {
+  font-size: 25px;
+  font-family: monospace;
+  text-align: justify;
+  margin: 20px;
+}
+.formatoNasa {
+  display: flex;
+  float: left;
 }

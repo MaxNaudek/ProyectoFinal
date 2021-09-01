@@ -5,11 +5,6 @@ let url =
 
 let key = "DGuonCzgkwvRGOuog7LXxDQrmaDw2tlef79SD1uR";
 const Nasa = () => {
-  useEffect(() => {
-    console.log("ALV");
-    datosObjetos();
-  }, []);
-
   const [objeto, setObjeto] = useState([]);
 
   const datosObjetos = async () => {
@@ -20,20 +15,22 @@ const Nasa = () => {
     const objeto = nasajson;
     setObjeto(objeto);
   };
+  useEffect(() => {
+    console.log("ALV");
+    datosObjetos();
+  }, []);
   return (
     <>
       <h1>API DE NASA</h1>
-      <ul>
-        <button className="botonNasa" onClick={datosObjetos}>
-          NasaBotón{" "}
-        </button>
-        <li key={objeto}>
-          <img className="formatoNasa" src={objeto.hdurl}></img>
-          <h1 className="explicacionNasa">{objeto.explanation}</h1>
-        </li>
+      <ul key={objeto}>
+        <img className="formatoNasa" src={objeto.hdurl}></img>
+        <h1 className="explicacionNasa">{objeto.explanation}</h1>
       </ul>
     </>
   );
 };
 export default Nasa;
 //"https://api.nasa.gov/planetary/apod?api_key=DGuonCzgkwvRGOuog7LXxDQrmaDw2tlef79SD1uR";
+//<button className="botonNasa" onClick={datosObjetos}>
+//  NasaBotón{" "}
+//</button>
