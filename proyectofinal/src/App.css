@@ -1,3 +1,6 @@
+* {
+  background-color: #f2f9f2;
+}
 .App {
   font-weight: bold;
   font-family: sans-serif;
@@ -5,20 +8,47 @@
   font-size: 30px;
   margin-top: 30px;
 }
+.App1 {
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .Contenedorbotones {
   display: flex;
-  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
 }
 .formatoCat {
-  max-width: 60vh;
-  max-height: 60vh;
+  max-width: 100vh;
+  max-height: 100vh;
+  border-radius: 30px;
+}
+.formularioyboton {
+  display: flex;
+}
+.contenedorbotoncat {
+  display: flex;
+  justify-content: center;
 }
 .botonCat {
-  margin: 40px;
+  margin: 30px;
+  border-radius: 90px;
+  display: flex;
+  justify-content: center;
+}
+.alinearbotoncat {
+  display: flex;
+  justify-content: center;
 }
 
 .botonNasa {
   margin: 10px;
+  border-radius: 90px;
 }
 .botonPrueba {
   max-width: 15vh;
@@ -29,6 +59,13 @@
   border-radius: 30px;
   margin: 30px;
 }
+
+.Gatocontenedorlogo,
+.Museocontenedorlogo,
+.Nasacontenedorlogo {
+  border-radius: 150px;
+}
+
 .Museoboton {
   max-width: 30vh;
   max-height: 30vh;
@@ -43,17 +80,42 @@
   margin: 30px;
   box-shadow: 20px;
 }
+.Títulomuseo,
+.Títulogatos,
+.Títulonasa {
+  text-align: center;
+  text-decoration: underline;
+}
+
 .formatoNasa {
   max-width: 50vh;
   max-height: 50vh;
+  border-radius: 10px;
+}
+.formatoMuseo {
+  max-width: 120vh;
+  max-height: 120vh;
+}
+.contenedorimagenmuseo {
+  display: flex;
+  justify-content: center;
+}
+.contenedorfechaybotonmuseo {
+  display: flex;
+  justify-content: center;
 }
 .explicacionNasa {
   font-size: 25px;
   font-family: monospace;
   text-align: justify;
   margin: 20px;
+  padding: 10px;
 }
 .formatoNasa {
   display: flex;
   float: left;
+}
+.tituloformulario {
+  font-family: monospace;
+  text-align: center;
 }
