@@ -48,7 +48,12 @@ const Formulario = () => {
         </div>
       </form>
 
-      <p>{JSON.stringify(objeto)}</p>
+      <div
+        style={{ fontFamily: "monospace", fontSize: "16px", whiteSpace: "pre" }}
+        className="m-5 p-5 bg-dark text-light"
+      >
+        {JSON.stringify(objeto, null, 4)}
+      </div>
     </>
   );
 };

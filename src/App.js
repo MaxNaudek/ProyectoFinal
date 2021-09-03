@@ -58,10 +58,8 @@ export default function App() {
 
           <Route path="/Nasa" exact component={Nasa} />
         </Switch>
-        <h1>
-          {" "}
-          <Formulario />
-        </h1>
+
+        <Formulario />
       </div>
     </Router>
   );
