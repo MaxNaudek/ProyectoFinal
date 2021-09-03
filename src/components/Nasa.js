@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-let url =
+const url =
   "https://api.nasa.gov/planetary/apod?api_key=DGuonCzgkwvRGOuog7LXxDQrmaDw2tlef79SD1uR";
 
 const Nasa = () => {

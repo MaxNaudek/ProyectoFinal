@@ -49,7 +49,12 @@ const Formulario = () => {
       </form>
 
       <div
-        style={{ fontFamily: "monospace", fontSize: "16px", whiteSpace: "pre" }}
+        style={{
+          fontFamily: "monospace",
+          fontSize: "16px",
+          whiteSpace: "pre",
+          borderRadius: "10px",
+        }}
         className="m-5 p-5 bg-dark text-light"
       >
         {JSON.stringify(objeto, null, 4)}

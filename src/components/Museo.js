@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 
-let url =
+const url =
   "https://api.harvardartmuseums.org/image?apikey=0348df04-91a7-4245-a184-6d7de1a1d8c6";
 
 const Museo = () => {
   const [museo, setMuseo] = useState([]);
 
   const datosMuseo = async () => {
-    let museofetch = await fetch(url);
+    const museofetch = await fetch(url);
 
-    let museojson = await museofetch.json();
+    const museojson = await museofetch.json();
     console.log(museojson);
-    let museo = museojson;
+    const museo = museojson;
     setMuseo(museo);
   };
   useEffect(() => {

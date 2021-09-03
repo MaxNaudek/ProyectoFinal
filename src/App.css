@@ -30,6 +30,7 @@
 }
 .formularioyboton {
   display: flex;
+  margin: 30px;
 }
 .contenedorbotoncat {
   display: flex;
@@ -53,33 +54,22 @@
 .botonPrueba {
   max-width: 15vh;
 }
-.Gatoboton {
-  max-width: 30vh;
-  max-height: 30vh;
-  border-radius: 30px;
-  margin: 30px;
-}
 
 .Gatocontenedorlogo,
 .Museocontenedorlogo,
 .Nasacontenedorlogo {
-  border-radius: 150px;
+  border-radius: 160px;
 }
 
-.Museoboton {
-  max-width: 30vh;
-  max-height: 30vh;
-  border-radius: 30px;
-  margin: 30px;
-}
-
+.Gatoboton,
+.Museoboton,
 .Nasaboton {
   max-width: 30vh;
   max-height: 30vh;
   border-radius: 30px;
   margin: 30px;
-  box-shadow: 20px;
 }
+
 .Títulomuseo,
 .Títulogatos,
 .Títulonasa {
@@ -91,6 +81,7 @@
   max-width: 50vh;
   max-height: 50vh;
   border-radius: 10px;
+  margin: 12px;
 }
 .formatoMuseo {
   max-width: 120vh;
@@ -105,11 +96,11 @@
   justify-content: center;
 }
 .explicacionNasa {
-  font-size: 25px;
+  font-size: 23px;
   font-family: monospace;
   text-align: justify;
   margin: 20px;
-  padding: 10px;
+  padding: 5px;
 }
 .formatoNasa {
   display: flex;
